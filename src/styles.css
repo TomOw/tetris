@@ -34,7 +34,7 @@ html, body {
 
 .column {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .cell {
@@ -44,11 +44,11 @@ html, body {
     border: 1px solid #cdcdcd;
     cursor: pointer;
     border-radius: 1px;
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .cell:hover {

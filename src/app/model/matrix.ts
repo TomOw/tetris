@@ -73,6 +73,18 @@ export class Matrix {
 		this.setFigure(figure, figure.x + x, figure.y + y, true);
 	}
 
+	rotateFigure90() {
+		let figure = this.figures[this.figures.length - 1];
+		this.setFigure(figure, figure.x, figure.y, false);
+		figure.rotate90();
+		this.setFigure(figure, figure.x, figure.y, true);
+	}
+
+	checkCollision() {
+		let figure = this.figures[this.figures.length - 1];
+
+	}
+
 	drawCircle (x0: number, y0: number, radius: number) {
 		var x = radius-1;
 		var y = 0;
