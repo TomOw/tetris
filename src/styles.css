@@ -62,3 +62,59 @@ html, body {
 .cell-active:hover {
     background-color: #f5af0a;
 }
+
+.teal {
+    background-color: #23FFAD;
+}
+
+.teal:hover {
+    background-color: #23f3a1;
+}
+
+.orange {
+    background-color: #FFB70A
+}
+
+.orange:hover {
+    background-color: #f5af0a
+}
+
+.magenta {
+    background-color: #9010B2
+}
+
+.magenta:hover {
+    background-color: #8410a6
+}
+
+.green {
+    background-color: #83FF19;
+}
+
+.green:hover {
+    background-color: #7cf318;
+}
+
+.red {
+    background-color: #FF3F00;
+}
+
+.red:hover {
+    background-color: #f33d00;
+}
+
+.blue {
+    background-color: #0926B2;
+}
+
+.blue:hover {
+    background-color: #0926a6;
+}
+
+.gray {
+    background-color: #7488B2;
+}
+
+.gray:hover {
+    background-color: #687ca6;
+}

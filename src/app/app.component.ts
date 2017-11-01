@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
 
         this.matrix.setFigure(figure, 5, 5, true);
 
-        this.matrix.setCell(0, 0, true);
+        this.matrix.setCell(0, 0, true, 'orange');
 
 
     }

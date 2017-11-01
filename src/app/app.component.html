@@ -2,7 +2,15 @@
     <div class="board">
         <div class="matrix">
             <div class="column" *ngFor="let column of matrix.columns; let x = index">
-                <div class="cell" *ngFor="let cell of column.cells; let y = index" [ngClass]="{'cell-active': cell.on}" (click)="putRandomFigure(x, y)">
+                <div class="cell" *ngFor="let cell of column.cells; let y = index"
+                     [ngClass]="{'orange': cell.on && cell.color == 'orange',
+                     'teal': cell.on && cell.color == 'teal',
+                     'magenta' : cell.on && cell.color == 'magenta',
+                     'green' : cell.on && cell.color == 'green',
+                     'red' : cell.on && cell.color == 'red',
+                     'blue' : cell.on && cell.color == 'blue',
+                     'gray' : cell.on && cell.color == 'gray'}"
+                     (click)="putRandomFigure(x, y)">
 
                 </div>
             </div>

@@ -2,10 +2,11 @@
  * Created by Tomasz on 01/11/2017.
  */
 export class Cell {
-	on: boolean;
+    on: boolean;
+    color: string;
 
 
-	constructor(on: boolean) {
-		this.on = on;
-	}
+    constructor(on: boolean) {
+        this.on = on;
+    }
 }
