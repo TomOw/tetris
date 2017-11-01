@@ -69,20 +69,29 @@ export class Matrix {
 	}
 
 	moveFigure(figure: Figure, x: number, y: number) {
-		this.setFigure(figure, figure.x, figure.y, false);
-		this.setFigure(figure, figure.x + x, figure.y + y, true);
+		this.checkCollision();
+		if (figure.movable) {
+			this.setFigure(figure, figure.x, figure.y, false);
+			this.setFigure(figure, figure.x + x, figure.y + y, true);
+		}
 	}
 
 	rotateFigure90() {
 		let figure = this.figures[this.figures.length - 1];
-		this.setFigure(figure, figure.x, figure.y, false);
-		figure.rotate90();
-		this.setFigure(figure, figure.x, figure.y, true);
+		if (figure.movable) {
+			this.setFigure(figure, figure.x, figure.y, false);
+			figure.rotate90();
+			this.setFigure(figure, figure.x, figure.y, true);
+		}
 	}
 
 	checkCollision() {
 		let figure = this.figures[this.figures.length - 1];
-
+		if (this.columns[figure.x].cells[figure.y - 1].on) {
+			figure.movable = false;
+			return true;
+		}
+		return false;
 	}
 
 	drawCircle (x0: number, y0: number, radius: number) {

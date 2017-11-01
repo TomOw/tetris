@@ -36,11 +36,18 @@ export class AppComponent implements OnInit {
         };
         this.matrix = new Matrix;
 
-        this.matrix.init(20, 20);
+        this.matrix.init(30, 30);
         let figure = Figure.getL();
 
         this.matrix.setFigure(figure, 5, 5, true);
 
         this.matrix.setCell(0, 0, true);
+
+
     }
+
+    putRandomFigure(x: number, y: number) {
+        this.matrix.setFigure(Figure.getRandom(), x, y, true);
+    }
+
 }
